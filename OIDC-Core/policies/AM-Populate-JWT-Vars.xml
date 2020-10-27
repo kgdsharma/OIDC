@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-Populate-JWT-Vars">
+    <AssignVariable>
+        <Name>jwt_aud</Name>
+        <Ref>client_id</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>jwt_sub</Name>
+        <Value>{userProfile.email}</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>email</Name>
+        <Value>{userProfile.email}</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>jwt_expires_in</Name>
+        <Value>300s</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>jwt_issuer</Name>
+        <Template>{request.header.x-forwarded-proto}://{request.header.host}{proxy.basepath}</Template>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>nonce</Name>
+        <Ref>nonce</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>preferred_username</Name>
+        <Value>{userProfile.given_name}</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>name</Name>
+        <Value>{userProfile.given_name}</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>given_name</Name>
+        <Value>{userProfile.given_name}</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>family_name</Name>
+        <Value>{userProfile.family_name}</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>motto</Name>
+        <Value>{userProfile.motto}</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>grant_type</Name>
+        <Ref>authorization_code</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>token_type</Name>
+        <Value>Bearer</Value>
+    </AssignVariable>
+    <!-- optionally overwrites scope retrieved from session -->
+    <AssignVariable>
+        <Name>scope</Name>
+        <Ref>req_scope</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>sessionid</Name>
+        <Ref>request.header.cookie</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>private.secretkey</Name>
+        <!-- ideally this should be at least 32 bytes  -->
+        <Template>{oauthv2client.Get-Application-Attributes.client_secret}</Template>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

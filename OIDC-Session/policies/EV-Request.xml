@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="EV-Request">
+    <DisplayName>EV-Request</DisplayName>
+    <Properties/>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <Source clearPayload="false">request</Source>
+    <JSONPayload>
+        <Variable name="oidc_state">
+            <JSONPath>$.req_state</JSONPath>
+        </Variable>
+        <Variable name="oidc_client_id">
+            <JSONPath>$.client_id</JSONPath>
+        </Variable>
+        <Variable name="oidc_response_type">
+            <JSONPath>$.response_type</JSONPath>
+        </Variable>
+        <Variable name="response_type_token">
+            <JSONPath>$.response_type_token</JSONPath>
+        </Variable>
+        <Variable name="response_type_id_token">
+            <JSONPath>$.response_type_id_token</JSONPath>
+        </Variable>
+        <Variable name="response_type_code">
+            <JSONPath>$.response_type_code</JSONPath>
+        </Variable>
+        <Variable name="oidc_scope">
+            <JSONPath>$.req_scope</JSONPath>
+        </Variable>
+        <Variable name="oidc_redirect_uri">
+            <JSONPath>$.redirect_uri</JSONPath>
+        </Variable>
+        <Variable name="developer.app.name">
+            <JSONPath>$.appName</JSONPath>
+        </Variable>
+        <Variable name="verifyapikey.VerifyAPIKey-1.logo-url">
+            <JSONPath>$.appLogoUrl</JSONPath>
+        </Variable>
+        <Variable name="oidc_nonce">
+            <JSONPath>$.nonce</JSONPath>
+        </Variable>
+        <Variable name="oidc_display">
+            <JSONPath>$.display</JSONPath>
+        </Variable>
+        <Variable name="oidc_login_hint">
+            <JSONPath>$.login_hint</JSONPath>
+        </Variable>
+        <Variable name="oidc_open_id">
+            <JSONPath>$.open_id</JSONPath>
+        </Variable>
+        <Variable name="oidc_userprofile">
+            <JSONPath>$.userProfile</JSONPath>
+        </Variable>
+        <Variable name="oidc_authenticated">
+            <JSONPath>$.authenticated</JSONPath>
+        </Variable>
+    </JSONPayload>
+</ExtractVariables>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OAuthV2 name="OAuthV2-GenerateAuthorizationCode">
+    <ExternalAuthorization>false</ExternalAuthorization>
+    <Operation>GenerateAuthorizationCode</Operation>
+    <Scope>req_scope</Scope>
+    <ClientId>client_id</ClientId>
+    <ResponseType>code</ResponseType>
+    <ExpiresIn>600000</ExpiresIn>
+    <GrantType>grant_type</GrantType>
+    <Attributes>
+        <!-- use data extracted from session -->
+        <Attribute name="sessionid" ref="sessionid" display="true"/>
+        <Attribute name="scope" ref="req_scope" display="true"/>
+        <Attribute name="sub" ref="jwt_sub" display="true"/>
+    </Attributes>
+    <UserName>jwt_sub</UserName>
+</OAuthV2>

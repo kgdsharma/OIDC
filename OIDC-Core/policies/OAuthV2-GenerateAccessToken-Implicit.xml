@@ -1,0 +1,15 @@
+<OAuthV2 name="OAuthV2-GenerateAccessToken-Implicit">
+  <ExternalAuthorization>false</ExternalAuthorization>
+  <Operation>GenerateAccessTokenImplicitGrant</Operation>
+  <GrantType>grant_type</GrantType>
+  <Scope>req_scope</Scope>
+  <ClientId>client_id</ClientId>
+  <ResponseType>token</ResponseType>
+  <ExpiresIn>600000</ExpiresIn>
+  <Attributes>
+    <Attribute name="sessionid" ref="sessionid" display="true"/>
+    <Attribute name="scope" ref="req_scope" display="true"/>
+    <Attribute name="sub" ref="jwt_sub" display="true"/>
+  </Attributes>
+  <UserName>jwt_sub</UserName>
+</OAuthV2>

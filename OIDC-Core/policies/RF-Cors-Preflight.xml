@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault name="RF-Cors-Preflight">
+    <DisplayName>RF-Cors-Preflight</DisplayName>
+    <FaultResponse>
+        <Set>
+            <Headers>
+                <Header name="Access-Control-Allow-Origin">*</Header>
+                <Header name="Access-Control-Allow-Methods">POST, GET, OPTIONS</Header>
+                <Header name="Access-Control-Allow-Headers">Accept, Content-Type, connection, content-length, Authorization, Access-Control-Allow-Origin</Header>
+                <Header name="Access-Control-Allow-Credentials">true</Header>
+            </Headers>
+            <StatusCode>200</StatusCode>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

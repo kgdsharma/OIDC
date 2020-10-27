@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="4" name="oidc-session">
+    <Basepaths>/oidc-session</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1599186971136</CreatedAt>
+    <CreatedBy>sharmakg@yahoo.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>oidc-session</DisplayName>
+    <LastModifiedAt>1599446201210</LastModifiedAt>
+    <LastModifiedBy>sharmakg@yahoo.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:ec8ae69ded5d15f3f752cb9a30aead24ce3f3f053675a342fc16d84dd348dc48c2c541076ccb2122054b3e96cce4afdeb778736418907dec8bcc559f4ac9d891</ManifestVersion>
+    <Policies>
+        <Policy>AM-AuthorizationSession</Policy>
+        <Policy>AM-CleanResponseHeaders</Policy>
+        <Policy>AM-NoResponse</Policy>
+        <Policy>AM-Response</Policy>
+        <Policy>CL-GetAuthzTx</Policy>
+        <Policy>CP-AuthorizationSession</Policy>
+        <Policy>EV-Request</Policy>
+        <Policy>JS-MaybeFormatFault</Policy>
+        <Policy>RF-InvalidRequest</Policy>
+        <Policy>RF-UnknownRequest</Policy>
+        <Policy>VerifyAPIKey-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://maybeFormatFault.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LookupCache name="CL-AuthorizationRequest">
+    <DisplayName>CL-AuthorizationRequest</DisplayName>
+    <CacheResource>cache1</CacheResource>
+    <Scope>Global</Scope>
+    <AssignTo>authorization.request</AssignTo>
+    <CacheKey>
+        <Prefix>authz-sess</Prefix>
+        <KeyFragment ref="request.header.cookie"/>
+    </CacheKey>
+</LookupCache>

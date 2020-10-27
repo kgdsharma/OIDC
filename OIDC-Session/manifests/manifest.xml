@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AM-AuthorizationSession" version="SHA-512:4fb4fc2adcd04a550bbd200065413d46477e9533fe0e0cfae830dec497139e4f1428228f4844a5dd23587a08b00c8c954294a29f5f1b028f6a0152fd1ab38010"/>
+        <VersionInfo resourceName="AM-CleanResponseHeaders" version="SHA-512:084450988d4f60b62365bacc8a581437436da35d88e87aa483e27e52cf13e1df250811479032e32d5fc825c69977232aa0c300d005b2f1accb6bbbf61c9e9ea6"/>
+        <VersionInfo resourceName="AM-NoResponse" version="SHA-512:0ea098523a78c08bf1d86174f687cf74432272775d7571fe0b4db4ccb3f5db6bcbe4d53518f5e97bbc666d06ba0b230b85776a3c2f364471db9f1ff03866c036"/>
+        <VersionInfo resourceName="AM-Response" version="SHA-512:d90277d3b5428a9089db1f9c3f70bb988152b0fa4e40b7d928918b42846e55bae91ea59b56ee4d43f2785ba07e9e5afec1e6052fde219139ce17bde8c5ab3068"/>
+        <VersionInfo resourceName="CL-GetAuthzTx" version="SHA-512:d9f8866c6efbaacb5db3364bb4ef0e834fe581002c061f0754f299c52bb1afe4f63337c4fff581db14be84f7397bb23dea278b0b0906aafae1f9961690994ea3"/>
+        <VersionInfo resourceName="CP-AuthorizationSession" version="SHA-512:446a4bb6930c8938e81fa3c8d88bc4e0aa19f23724459ee3db86971301852f8d8d5a92eae5abb539aaba0d8251ded8f9681edd5d7917106b3cacfaac0f57cc76"/>
+        <VersionInfo resourceName="EV-Request" version="SHA-512:c1357ebe281bffb9a869960ace525bcecf9c1950a62768d84dbd5946663dc2d04acc3c7b54bdb9e27803fa6e86789e85b2ae5ae2960eb7b9bb0b5d7c0d02d20d"/>
+        <VersionInfo resourceName="JS-MaybeFormatFault" version="SHA-512:5f58733a0a755480d8d211a8461800e916310e6df9f2d8477a975f73db5f7ef2f9b62ed0a01aa8383af4ba7075e8d5337f420a01bfdd92d67827a1e97775a792"/>
+        <VersionInfo resourceName="RF-InvalidRequest" version="SHA-512:4784dd28ece7abe0a79c764072568e1c85a8d36e1813481c5788b0d036a55713fd49c3aa66ce7690520723da869bdca18f4ed601fee7565de17cdc16dc855a3f"/>
+        <VersionInfo resourceName="RF-UnknownRequest" version="SHA-512:8c9c0043281bd89c90e581932c263990055ab5fe66da3a5165e7aa0649958b5c99fe57314ef4fe5c72696eee492fb968b57a8dc9283683a9426c646411283f25"/>
+        <VersionInfo resourceName="VerifyAPIKey-1" version="SHA-512:4d95437606515dfc16fcd2f7791205697181b6ec015b9867e481f317cfb8d800392d642feeac943196ccfe01debb2d700d004638300f6bda2305330db3c64b15"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:4358e501c1ec74606c6524564b2a86d4e8612356855cb0993fdb8ce009a62ed63ef004cf8ac2e9b8180f58582b796da1640aa110c5bb739c43e218ec094a3186"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="jsc://maybeFormatFault.js" version="SHA-512:86503b28a21f2d25f2ed8d7f78b72f91dd452761317c2c116ddd3e6fc597245280d450961538204cacd9f76148c9650774d912a13449495bd839a2259ffa4910"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints/>
+</Manifest>
